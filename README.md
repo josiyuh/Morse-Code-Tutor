@@ -146,3 +146,5 @@ MIT License
 ## Author
 
 Josiah Horn
+Victor Adeoye
+Ajayi Ifeloluwa
