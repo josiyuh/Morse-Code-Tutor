@@ -123,7 +123,7 @@ Add screenshots or a demonstration video here.
 
 ## Open Source
 
-This project is open-source and intended for learning and experimentation in embedded systems, IoT architecture, and real-time device interaction.
+This project is open-source and intended for learning and experimentation in Computer networks, Embedded Systems, IoT architecture, and real-time device interaction.
 
 ---
 
