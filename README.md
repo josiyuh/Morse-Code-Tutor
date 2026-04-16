@@ -113,27 +113,12 @@ morse-code-tutor-system/
 └── LICENSE
 ```
 
----
-
-## Demo
-
-Add screenshots or a demonstration video here.
 
 ---
 
 ## Open Source
 
 This project is open-source and intended for learning and experimentation in Computer networks, Embedded Systems, IoT architecture, and real-time device interaction.
-
----
-
-## Future Improvements
-
-* User accounts and progress tracking
-* Cloud database integration
-* Mobile-friendly interface
-* Difficulty levels and training modes
-* Audio waveform visualization
 
 ---
 
