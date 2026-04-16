@@ -6,7 +6,7 @@ This project allows users to practice Morse code through audio playback and phys
 
 ---
 
-## 🚀 Features
+## Features
 
 * Real-time Morse code playback (audio output via ESP8266)
 * Telegraph key input with timing-based decoding
@@ -19,11 +19,11 @@ This project allows users to practice Morse code through audio playback and phys
 
 ---
 
-## 🧠 System Architecture
+## System Architecture
 
 This system is divided into two main layers:
 
-### 📡 ESP8266 (Device Layer)
+### ESP8266 (Device Layer)
 
 Handles all real-time interaction and signal processing:
 
@@ -33,7 +33,7 @@ Handles all real-time interaction and signal processing:
 * Audio generation (D5)
 * Input grading logic
 
-### 🖥️ Raspberry Pi 4 (Supervisor Layer)
+### Raspberry Pi 4 (Supervisor Layer)
 
 Handles system coordination and data management:
 
@@ -45,37 +45,37 @@ Handles system coordination and data management:
 
 ---
 
-## 🔌 Hardware Setup
+## Hardware Setup
 
 * ESP8266 NodeMCU
 * Raspberry Pi 4
-* Piezo speaker or buzzer → connected to D5
-* Telegraph key / push button → connected to D6 (INPUT_PULLUP to GND)
+* Piezo speaker or buzzer connected to D5
+* Telegraph key or push button connected to D6 (INPUT_PULLUP to GND)
 * Breadboard and jumper wires
 
 ---
 
-## 🌐 Web Interface
+## Web Interface
 
-The system includes a browser-based UI that allows users to:
+The system includes a browser-based interface that allows users to:
 
-* Start/stop Morse playback
+* Start and stop Morse playback
 * Adjust WPM and tone frequency
 * View real-time feedback
 * Interact with the tutor without refreshing the page
 
 ---
 
-## 📡 API Overview
+## API Overview
 
 The ESP8266 exposes REST-style endpoints:
 
-* `GET /api/status` → returns system status
-* `POST /api/start` → starts Morse playback
-* `POST /api/stop` → stops playback
-* `POST /api/config` → updates settings
+* GET /api/status → returns system status
+* POST /api/start → starts Morse playback
+* POST /api/stop → stops playback
+* POST /api/config → updates settings
 
-Example config request:
+Example configuration request:
 
 ```json
 {
@@ -86,20 +86,20 @@ Example config request:
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
-1. User selects a word or input via the web interface
+1. User selects a word or input through the web interface
 2. Raspberry Pi sends instructions to the ESP8266
 3. ESP8266 converts the word into Morse code
 4. Audio is played through the speaker
 5. User inputs Morse using the telegraph key
-6. ESP8266 evaluates timing and classifies dots/dashes
-7. System compares input vs expected output
+6. ESP8266 evaluates timing and classifies dots and dashes
+7. The system compares input with expected output
 8. Raspberry Pi logs results and tracks performance
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 morse-code-tutor-system/
@@ -107,7 +107,7 @@ morse-code-tutor-system/
 ├── esp8266/            # Firmware (NodeMCU)
 ├── raspberry-pi/       # Server, logging, data
 ├── web/                # Frontend interface
-├── docs/               # Diagrams, slides, documentation
+├── docs/               # Diagrams and documentation
 ├── images/             # Demo and setup images
 ├── README.md
 └── LICENSE
@@ -115,41 +115,34 @@ morse-code-tutor-system/
 
 ---
 
-## 📸 Demo
+## Demo
 
-(Add screenshots or a demo GIF here)
-
----
-
-## 🔓 Open Source
-
-This project is open-source and designed for learning:
-
-* Embedded systems
-* IoT architecture
-* Real-time signal processing
-* Web-based device control
+Add screenshots or a demonstration video here.
 
 ---
 
-## 🚧 Future Improvements
+## Open Source
+
+This project is open-source and intended for learning and experimentation in embedded systems, IoT architecture, and real-time device interaction.
+
+---
+
+## Future Improvements
 
 * User accounts and progress tracking
 * Cloud database integration
-* Mobile-friendly UI
+* Mobile-friendly interface
 * Difficulty levels and training modes
 * Audio waveform visualization
 
 ---
 
-## 📄 License
+## License
 
 MIT License
 
 ---
 
-## 👤 Author
+## Author
 
 Josiah Horn
-
----
